@@ -36,58 +36,140 @@ const counterItems = [
 ];
 
 const logoIconsList = [
+  // Core Technologies
   {
-    imgPath: "/images/logos/company-logo-1.png",
+    name: "HTML5",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-2.png",
+    name: "CSS3",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-3.png",
+    name: "JavaScript",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-4.png",
+    name: "React",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-5.png",
+    name: "Next.js",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+  },
+  
+  // Programming Languages
+  {
+    name: "Python",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  // {
+  //   name: "Java",
+  //   imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+  // },
+  // {
+  //   name: "C",
+  //   imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+  // },
+  // {
+  //   name: "C++",
+  //   imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+  // },
+  
+  // Backend & Databases
+  {
+    name: "Node.js",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-6.png",
+    name: "Express.js",
+    imgPath: "https://i.ibb.co/6cHDMZ8C/express-jssrthyr.png",
   },
   {
-    imgPath: "/images/logos/company-logo-7.png",
+    name: "MongoDB",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-8.png",
+    name: "PostgreSQL",
+    imgPath: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-9.png",
+    name: "MySQL",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+  },
+  
+  // UI Frameworks
+  {
+    name: "Tailwind CSS",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-10.png",
+    name: "Bootstrap",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
   },
   {
-    imgPath: "/images/logos/company-logo-11.png",
+    name: "Angular",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+  },
+  
+  // Tools & Platforms
+  {
+    name: "Git",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "VS Code",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  },
+  {
+    name: "Docker",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    name: "Firebase",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+  },
+  
+  // Design & Productivity Tools
+  {
+    name: "Figma",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  },
+  {
+    name: "Canva",
+    imgPath: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/canva-icon.png",
+  },
+  {
+    name: "Adobe Photoshop",
+    imgPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Adobe_Photoshop_CC_icon.svg/500px-Adobe_Photoshop_CC_icon.svg.png",
+  },
+  {
+    name: "Postman",
+    imgPath: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
+    name: "Microsoft Office",
+    imgPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Microsoft_Office_logo_%282013%E2%80%932019%29.svg/500px-Microsoft_Office_logo_%282013%E2%80%932019%29.svg.png",
   },
 ];
-
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Detail-Oriented Work",
+    desc: "Producing polished, high-quality outcomes with strong focus on the little things.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Clear Communication",
+    desc: "Staying in touch throughout the process so everything remains smooth and transparent.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Timely Completion",
+    desc: "Ensuring every project is delivered on time without compromising on quality.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -119,6 +201,18 @@ const techStackIcons = [
     scale: 1,
     rotation: [0, 0, 0],
   },
+   {
+    name: "Decorative Agent",
+    modelPath: "/models/tcss.glb",
+    scale: 60,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Design Enthusiast",
+    modelPath: "/models/figma.glb",
+    scale: 2,
+    rotation: [0, 0, 0],
+  },
   {
     name: "Python Developer",
     modelPath: "/models/python-transformed.glb",
@@ -143,46 +237,98 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
+  {
+    name: "MongoDB Developer",
+    modelPath: "/models/mdb.glb",
+    scale: 70,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Testing Specialist",
+    modelPath: "/models/docker.glb",
+    scale: 1.4,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Photoshop Designer",
+    modelPath: "/models/ps.glb",
+    scale: 0.009,
+    rotation: [0, 0, 0],
+  },
 ];
 
-const expCards = [
+ const educationCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
-    responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+    review:
+      "My postgraduate journey is helping me strengthen my full stack development skills.",
+
+    imgPath: "/images/mca.png",
+    logoPath: "/images/esec.png",
+
+    degree: "Master of Computer Applications (MCA)",
+    institute: "ESEC-Erode Sengunthar Engineering College",
+    year: "2024 – 2026",
+
+    highlights: [
+      "Specializing in Full Stack Development.",
+      "Building projects with React.js stack.",
+      "Improving scalable architecture skills.",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+    review:
+      "My undergraduate journey equipped me with solid programming fundamentals and web development skills.",
+
+    imgPath: "/images/bca.png",
+    logoPath: "/images/gandhi.png",
+
+    degree: "Bachelor of Computer Science (B.Sc - CS)",
+    institute: "Gandhi Arts and Science College",
+    year: "2021 – 2024",
+
+    highlights: [
+      "Core programming with Java, C++, and Python.",
+      "Web development with HTML, CSS, JavaScript.",
+      "Database management and software development.",
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+    review:
+      "My senior secondary education provided me with a strong foundation in mathematics and science.",
+
+    imgPath: "/images/12th.png",
+    logoPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/TamilNadu_Logo.svg/250px-TamilNadu_Logo.svg.png",
+
+    degree: "HSC - 12th",
+    institute: "Government High School, Puduvadavalli.",
+    year: "2020 – 2021",
+
+    highlights: [
+      "Strong foundation in Mathematics and Science.",
+      "Developed problem-solving and analytical skills.",
+      "Scored 75%+ in board examinations.",
+    ],
+  },
+  {
+    review:
+      "My secondary education laid the groundwork for my academic and personal development.",
+
+    imgPath: "/images/10th.png",
+    logoPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/TamilNadu_Logo.svg/250px-TamilNadu_Logo.svg.png",
+
+    degree: "SSLC - 10th",
+    institute: "Government High School, Puduvadavalli.",
+    year: "2018 – 2019",
+
+    highlights: [
+      "Strong basics in Mathematics, Science, and English.",
+      "Built foundational problem-solving skills.",
+      "Scored 62%+ in board examinations.",
     ],
   },
 ];
+
+
 
 const expLogos = [
   {
@@ -268,7 +414,7 @@ export {
   abilities,
   logoIconsList,
   counterItems,
-  expCards,
+  educationCards,
   expLogos,
   testimonials,
   socialImgs,

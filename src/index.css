@@ -165,7 +165,7 @@ section {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-[40vh] md:h-[50vh] h-66 relative;
 
         img {
           @apply w-full h-full object-cover rounded-xl absolute inset-0;
@@ -275,7 +275,7 @@ section {
   }
 
   .tech-icon-wrapper {
-    @apply flex justify-center items-center w-52 h-60 relative;
+    @apply flex justify-center items-center w-52 h-60 relative pt-5;
   }
 
   form {
@@ -469,4 +469,96 @@ section {
 
 .card:hover::before {
   opacity: 1;
+}
+
+
+.logo-showcase {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+/* ✅ Gradient fade edges */
+.fade-left,
+.fade-right {
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.fade-left {
+  left: 0;
+  background: linear-gradient(to right, #000, transparent);
+}
+
+.fade-right {
+  right: 0;
+  background: linear-gradient(to left, #000, transparent);
+}
+
+/* ✅ Marquee container */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ✅ Smooth animated track */
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  width: max-content;
+
+  animation: scroll 12s linear infinite;
+
+  /* GPU Smoothness */
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* ✅ Pause on hover */
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* ✅ Logo item */
+.logo-item {
+  flex: none;
+  width: 80px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+  background: rgba(253, 253, 253, 0.03);
+  border: 1px solid rgb(29, 29, 29);
+
+  transition: 0.25s ease;
+}
+
+.logo-item img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  filter: brightness(1.05);
+}
+
+/* Hover glow */
+.logo-item:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+}
+
+/* ✅ Keyframes */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

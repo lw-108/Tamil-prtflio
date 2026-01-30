@@ -2,29 +2,37 @@ import { logoIconsList } from "../constants";
 
 const LogoIcon = ({ icon }) => {
   return (
-    <div className="flex-none flex-center marquee-item">
-      <img src={icon.imgPath} alt={icon.name} />
+    <div className="logo-item">
+      <img
+        src={icon.imgPath}
+        alt={icon.name}
+        loading="lazy"
+        draggable="false"
+      />
     </div>
   );
 };
 
-const LogoShowcase = () => (
-  <div className="md:my-20 my-10 relative">
-    <div className="gradient-edge" />
-    <div className="gradient-edge" />
+const LogoShowcase = () => {
+  // ✅ Duplicate list automatically
+  const icons = [...logoIconsList, ...logoIconsList];
 
-    <div className="marquee h-52">
-      <div className="marquee-box md:gap-12 gap-5">
-        {logoIconsList.map((icon, index) => (
-          <LogoIcon key={index} icon={icon} />
-        ))}
+  return (
+    <section className="logo-showcase">
+      {/* Gradient Fade Edges */}
+      <div className="fade-left" />
+      <div className="fade-right" />
 
-        {logoIconsList.map((icon, index) => (
-          <LogoIcon key={index} icon={icon} />
-        ))}
+      {/* Marquee Track */}
+      <div className="marquee">
+        <div className="marquee-track">
+          {icons.map((icon, index) => (
+            <LogoIcon key={index} icon={icon} />
+          ))}
+        </div>
       </div>
-    </div>
-  </div>
-);
+    </section>
+  );
+};
 
 export default LogoShowcase;

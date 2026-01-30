@@ -48,21 +48,20 @@ const AppShowcase = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
-            <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+            <div className="image-wrapper bg-[#E0F7FF] flex items-center justify-center rounded-2xl">
+              <img src="/images/proz.png" alt="Ryde App Interface" className="object-contain" />
             </div>
-            <div className="text-content">
+            <div className="text-content pt-0">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Developed an Full working Musical Instrument <br /> E-Commercial Website.
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                An app built HTML, CSS, JavaScript with a focus on delivering a
+                seamless and user-friendly experience.
               </p>
             </div>
           </div>
-
+ 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={libraryRef}>
               <div className="image-wrapper bg-[#FFEFDB]">
