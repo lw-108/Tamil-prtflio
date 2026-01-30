@@ -55,11 +55,22 @@ const Hero = () => {
               code.
             </p>
 
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
-            />
+            <a
+              href="/Tamil-resume.pdf"
+              download
+              className=" cta-button 
+    inline-flex items-center gap-2
+    px-4 py-2
+    rounded-lg
+    text-white font-medium
+    transition-all duration-300
+    w-80 h-16 mt-10 text-center justify-center text-lg
+  "
+            >
+              ⬇ Resume
+            </a>
+
+
           </div>
         </header>
 
